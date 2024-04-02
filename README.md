@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - [Solution on FrontendMentor](https://your-solution-url.com)
-- [Live Demo on Vercel](https://your-live-site-url.com)
+- [Live Demo on Vercel](https://social-links-profile-two-navy.vercel.app/)
 
 ## My process
 
@@ -30,13 +30,13 @@ Users should be able to:
 
 ### What I learned
 
-I applied my previous knowledge of laying things out and managing customizable settings with custom properties. Keeping the final UI pixel-perfect to the design is always a new learning experience, and as usual, 
+I applied my previous knowledge of laying things out and managing customizable settings with custom properties. Keeping the final UI pixel-perfect and almost exactly the same as the design is always a new learning experience. 
 
-I avoided using arbitrary magic numbers to adjust spacing and sizing. Instead, I opted for generally-used values and utilized line-height to address certain spacing issues effectively.
+I avoided using arbitrary magic numbers to adjust spacing and sizing. Instead, I opted for generally used values and utilized the leading to address certain spacing issues effectively.
 
-I opted for the Inter variable font instead of its static versions. This kept the CSS code concise, requiring only one `@font-face` block to include the variable font.
+I opted for the Inter variable font instead of its static variants. This kept the CSS code concise, requiring only one `@font-face` block to include the variable font.
 
-_I noticed the recommended font size of 14px wasn't necessary to achieve the desired UI. The standard 16px base font size worked well, and the basic copy inherited it seamlessly._
+_I also noticed the recommended font size of 14px wasn't necessary to achieve the desired UI. The standard 16px base font size worked well, and the basic copy inherited it seamlessly._
 
 ## Author
 
