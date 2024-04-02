@@ -34,7 +34,7 @@ I applied my previous knowledge of laying things out and managing customizable s
 
 I avoided using arbitrary magic numbers to adjust spacing and sizing. Instead, I opted for generally-used values and utilized line-height to address certain spacing issues effectively.
 
-I opted for the Inter variable font instead of its static versions. This kept the CSS code concise, requiring only one @font-face block to include the variable font.
+I opted for the Inter variable font instead of its static versions. This kept the CSS code concise, requiring only one `@font-face` block to include the variable font.
 
 _I noticed the recommended font size of 14px wasn't necessary to achieve the desired UI. The standard 16px base font size worked well, and the basic copy inherited it seamlessly._
 
