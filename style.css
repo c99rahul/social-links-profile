@@ -1,0 +1,305 @@
+/**
+ * Container ki padding: 24px
+ * Container ki vertical margin: 116px
+ * Card ki padding: 24px
+ * Avatar width: ~88-90-92px
+ * Avatar-Title gap: 32px
+ * Title size: ~20px * 1.3 leading 
+ * Title-location gap: 16px
+ * Location size: 14px
+ * Location-bio gap: 32px
+ * Bio size: 16px
+ * Bio-links gap: 24px
+ * Link-list gap: ~15-16px
+ * Link-list text size: 13px
+ * Link-list padding: 16px
+ */
+
+:root {
+  --leading__global: 150%;
+  --leading__titles: 130%;
+
+  --size__global: 100%;
+  --size__h1: 1.5em;
+  --size__card-btn: 87.5%;
+  --size__card-location: 90%;
+  --size__card-bio: 87.5%;
+  --size__credits: 75%;
+
+  --font-stack__global: "Inter", sans-serif;
+  --font-stack__titles: "";
+
+  --inner-spacing__container: 1.5em;
+  --inner-spacing__card: 1.5em;
+  --inner-spacing__btn: 1rem;
+  --inner-spacing__credits__top: 1rem;
+
+  --outer-spacing__titles-top: 1em;
+  --outer-spacing__titles-bottom: 0.75rem;
+  --outer-spacing__top__card-footer: 1.5rem;
+  --outer-spacing__container: 7em;
+  --outer-spacing__card-header__bottom: 1.75rem;
+  --outer-spacing__container-adjusted: calc(
+    var(--outer-spacing__container) - var(--inner-spacing__container)
+  );
+
+  --radius__card: 1em;
+  --radius__btn: 0.5em;
+  --radius__card-avatar: 50%;
+
+  --gap__link-list: 1rem;
+  --width__card: 24em;
+  --transition__credits: opacity 250ms ease-in-out;
+  --transition__card-btn: background-color 250ms,
+    color 150ms cubic-bezier(0.81, 0.42, 1, -0.61);
+
+  --opacity__credits: 35%;
+  --opacity__credits__hover: 70%;
+
+  --color__primary__off-black: hsl(0 0% 8%);
+  --color__primary__dark-grey: hsl(0 0% 12%);
+  --color__secondary__white: hsl(0 0% 100%);
+  --color__secondary__grey: hsl(0 0% 20%);
+  --color__accent__lemon-green: hsl(75 94% 57%);
+
+  font-size: var(--size__global);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf) format("truetype");
+}
+
+/*
+ * Basic reset
+ * @link https://github.com/c99rahul/base-css
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+header,
+main,
+footer,
+article,
+aside,
+section,
+nav,
+p,
+blockquote,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+abbr,
+acronym,
+cite,
+code,
+dfn,
+em,
+q,
+strong,
+samp,
+var,
+time,
+mark,
+small,
+del,
+ins,
+sub,
+sup,
+kbd,
+tt,
+s,
+strike,
+big,
+img,
+audio,
+video,
+figure,
+figcaption,
+form,
+input,
+textarea,
+button,
+select,
+option,
+optgroup,
+label,
+fieldset,
+legend,
+datalist,
+keygen,
+progress,
+meter,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+object,
+iframe,
+embed,
+br,
+hr,
+canvas {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  vertical-align: baseline;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+body {
+  font: 1em / var(--leading__global) var(--font-stack__global);
+  background-color: var(--color__primary__off-black);
+  color: var(--color__secondary__white);
+}
+
+h1,
+h2,
+h3 {
+  line-height: var(--leading__titles);
+  margin-top: var(--outer-spacing__titles-top);
+  margin-bottom: var(--outer-spacing__titles-bottom);
+}
+
+h1 {
+  font-size: var(--size__h1);
+  font-weight: bold;
+}
+
+.site-container {
+  padding: var(--inner-spacing__container);
+  margin: var(--outer-spacing__container-adjusted) auto;
+}
+
+.v-card {
+  background-color: var(--color__primary__dark-grey);
+  padding: var(--inner-spacing__card);
+  border-radius: var(--radius__card);
+  max-width: var(--width__card);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.v-card__header,
+.v-card__body {
+  text-align: center;
+}
+
+.v-card__avatar {
+  border-radius: var(--radius__card-avatar);
+}
+
+.v-card__header + * {
+  margin-top: var(--outer-spacing__card-header__bottom);
+}
+
+.v-card__links li {
+  display: block;
+}
+
+.v-card__location {
+  margin: 0;
+  font-size: var(--size__card-location);
+  font-style: normal;
+  line-height: 1;
+  font-weight: bold;
+  color: var(--color__accent__lemon-green);
+}
+
+.v-card__body {
+  line-height: 1;
+}
+
+.v-card__bio {
+  font-size: var(--size__card-bio);
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  line-height: 1;
+  padding: var(--inner-spacing__btn);
+  text-align: center;
+  background-color: hsl(0 0 0% / 50%);
+  border-radius: var(--radius__btn);
+}
+
+.v-card__btn {
+  background-color: var(--color__secondary__grey);
+  color: var(--color__secondary__white);
+  font-weight: bold;
+  font-size: var(--size__card-btn);
+  transition: var(--transition__card-btn)
+}
+
+.v-card__btn:hover {
+  background-color: var(--color__accent__lemon-green);
+  color: var(--color__primary__dark-grey);
+}
+
+.v-card__footer {
+  margin-top: var(--outer-spacing__top__card-footer);
+}
+
+.v-card__links li + li {
+  margin-top: var(--gap__link-list);
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --outer-spacing__container: 10.5em;
+    --inner-spacing__card: 2.5em;
+  }
+}
+
+.attribution {
+  padding-top: var(--inner-spacing__credits__top);
+  font-size: var(--size__credits);
+  text-align: center;
+  color: var(--color__secondary__white);
+  opacity: var(--opacity__credits);
+  transition: var(--transition__credits);
+}
+.attribution a {
+  color: inherit;
+}
+
+.attribution:hover,
+.attribution:active,
+.attribution:focus,
+.v-card:hover + .attribution,
+.v-card:active + .attribution,
+.v-card:focus + .attribution {
+  opacity: var(--opacity__credits__hover);
+}
