@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution on FrontendMentor](https://www.frontendmentor.io/solutions/blog-post-card-made-with-css-y1GKbfhyzV)
+- [Solution on FrontendMentor](https://www.frontendmentor.io/solutions/social-profile-layout-using-css-rALSxU_saO)
 - [Live Demo on Vercel](https://social-links-profile-two-navy.vercel.app/)
 
 ## My process
