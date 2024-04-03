@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution on FrontendMentor](https://your-solution-url.com)
+- [Solution on FrontendMentor](https://www.frontendmentor.io/solutions/blog-post-card-made-with-css-y1GKbfhyzV)
 - [Live Demo on Vercel](https://social-links-profile-two-navy.vercel.app/)
 
 ## My process
@@ -41,5 +41,5 @@ _I also noticed the recommended font size of 14px wasn't necessary to achieve th
 ## Author
 
 - [github / c99rahul](https://github.com/c99rahul)
-- [FrontendMentor / yourusername](https://www.frontendmentor.io/profile/c99rahul)
-- [Twitter / @yourusername](https://www.twitter.com/c99rahul)
+- [FrontendMentor / c99rahul](https://www.frontendmentor.io/profile/c99rahul)
+- [Twitter / @c99rahul](https://www.twitter.com/c99rahul)
